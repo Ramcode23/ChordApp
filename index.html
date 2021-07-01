@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChordApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><i class="fas fa-guitar fa-2x"></i>ChordApp</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="mt-5">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rbprogretion" checked value="progression" onclick="enableHandleClick()">
+                <label class="form-check-label" for="rbprogretion">
+                  Chord Progretions
+                </label>
+            </div>
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="rbfamily" value="family" onclick="desableHandleClick()">
+                <label class="form-check-label" for="rbfamily">
+                Chord Family
+                </label>
+            </div>
+
+            <select class="form-select" id="inputselectnotes" name="select">
+                <option value="">Select a root </option>
+              </select>
+
+            <select class="form-select" id="inputselectprogrsion" name="select">
+                <option value="">Select a Progression </option>
+              </select>
+
+        </div>
+
+        <div id="image" class="mt-4">
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tonaljs/tonal@3.7.2/browser/tonal.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/svg.js@2.7.1/dist/svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chordy-svg@latest/dist/chordy-svg.min.js"></script>
+
+    <script src="./js/cleaner.js"></script>
+    <script src="./js/notes.js"></script>
+    <script src="./js/progrestions.js"></script>
+    <script src="./js/chords.js"></script>
+    <script src="./js/ui.js"></script>
+
+
+    <script type="text/javascript">
+        // create new svg diagram
+
+        var element = document.getElementById("image")
+    </script>
+
+
+</body>
+
+</html>
